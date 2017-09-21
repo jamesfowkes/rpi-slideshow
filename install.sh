@@ -1,5 +1,6 @@
 # This file must be run as root to install the servic file in the correct location!
 
+apt-get install feh
 pip install -r requirements.txt
 
 path_param=$1
