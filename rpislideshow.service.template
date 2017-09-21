@@ -1,0 +1,13 @@
+[Unit]
+Description=Slideshow Service
+ 
+[Service]
+User=USER
+Environment=DISPLAY=:0
+ExecStart=EXEC_START_PATH PATH DELAY
+StandardOutput=journal+console
+StandardError=journal+console
+ 
+[Install]
+WantedBy=multi-user.target
+Alias=rpislideshow.service

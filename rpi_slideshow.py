@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ rpi_slideshow.py
 
 Usage:
