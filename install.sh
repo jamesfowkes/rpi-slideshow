@@ -11,6 +11,6 @@ cat rpislideshow.service.template \
 | sed -e "s#EXEC_START_PATH#$thisdir/rpi_slideshow.py#" \
 | sed -e "s#PATH#$path_param#" \
 | sed -e "s#DELAY#$delay_param#" \
-| sed -e "s#USER#$(logname)#" > rpislideshow.service
+| sed -e "s#USER#$SUDO_USER#" > rpislideshow.service
 
 systemctl enable $thisdir/rpislideshow.service
